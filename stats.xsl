@@ -50,15 +50,15 @@
 <xsl:template match="/pokedex">
   <html>
   <body>
-  <h2>Strong Attackers: <xsl:value-of select="XPATH-QUERY-GOES-HERE" /></h2>
+  <h2>Strong Attackers: <xsl:value-of select="pokemon[attack/text() > 150]" /></h2>
   <table border="1">
     <tr bgcolor="#9acd32">
       <th>Name</th>
       <th>Type</th>
     </tr>
-    <xsl:apply-templates select="XPATH-QUERY-GOES-HERE" />
+    <xsl:apply-templates select="pokemon[attack/text() > 150]" />
   </table>
-  <h2>Strong Defenders: <xsl:value-of select="XPATH-QUERY-GOES-HERE" /></h2>
+  <h2>Strong Defenders: <xsl:value-of select="pokemon[defense/text() > 150]" /></h2>
   <table border="1">
     <tr bgcolor="#9acd32">
       <th>Name</th>
