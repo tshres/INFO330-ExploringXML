@@ -84,8 +84,8 @@
 <!--
 <xsl:template match="pokemon">
     <tr>
-      <td><xsl:value-of select="XPATH-QUERY-GOES-HERE" /></td>
-      <td><xsl:value-of select="XPATH-QUERY-GOES-HERE" /></td>
+      <td><xsl:value-of select="pokedexNumber" /></td>
+      <td><xsl:value-of select="type" /></td>
     </tr>
 </xsl:template>
 -->
